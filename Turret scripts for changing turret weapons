@@ -1,0 +1,11 @@
+Remember, -1 is driver, 0 is gunner, 0,0 is commander, 1 is extra seat 1. 2 is extra seat 2, and so on
+
+helpme = _this weaponsTurret [0]; copyToClipboard str(helpme);        [this will copy all weapons assigned to that seat to your clipboard]
+
+helpme = magazinesAllTurrets _this; copyToClipboard str(helpme);      [this will copy all ammo types assigned to that vehicle to your clipboard]
+
+_this removeWeaponTurret ["", [0]];
+_this addWeaponTurret ["", [0]];
+_this addMagazineTurret ["",[0]];
+
+[this little code block was put together using LCPL Lirus guide on youtube. some weapons will have some.... unexpected results]
